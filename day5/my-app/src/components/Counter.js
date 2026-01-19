@@ -5,9 +5,14 @@ const Counter = () => {
 
   return (
     <div className="counter">
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <div>{count}</div>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <h2>Counter</h2>
+      <div className="counter_co">
+        <button onClick={() => setCount(count - 1)}>-</button>
+        <div className="counter_text">
+          <p>{count}</p>
+        </div>
+        <button onClick={() => setCount(count + 1)}>+</button>
+      </div>
     </div>
   );
 };
