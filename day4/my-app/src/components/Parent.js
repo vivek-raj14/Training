@@ -8,10 +8,10 @@ const Parent = () => {
   };
 
   return (
-    <>
+    <div className="list">
       <h1>Parent</h1>
       <Child onUpdate={handleChange} text={title} />
-    </>
+    </div>
   );
 };
 export default Parent;

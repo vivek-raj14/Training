@@ -1,21 +1,21 @@
 import React from "react";
 import ListData from "./ListData";
-
+import "./card.css";
 const List = () => {
   const data = ListData;
   return (
-    <>
+    <div className="list">
       <h1>Map in react</h1>
-      {data.map(({ id, title, description, status }) => (
-        <ul key={id}>
-          <li>
+      <ul>
+        {data.map(({ id, title, description, status }) => (
+          <li key={id}>
             {title}
             <br /> {description} <br />
             {status}
           </li>
-        </ul>
-      ))}
-    </>
+        ))}
+      </ul>
+    </div>
   );
 };
 

@@ -4,18 +4,18 @@ import ListData from "./ListData";
 const List2 = () => {
   const data = ListData;
   return (
-    <>
+    <div className="list">
       <h1>Conditional rendering</h1>
-      {data.map(({ id, title, description, status }) => (
-        <ul key={id}>
-          <li>
+      <ul>
+        {data.map(({ id, title, description, status }) => (
+          <li key={id}>
             {status === "Completed"
-              ? `${status} : ${description}`
-              : `${status} : ${title}`}
+              ? `${status}==>Discription:: ${description}`
+              : `${status}==>Title::  ${title}`}
           </li>
-        </ul>
-      ))}
-    </>
+        ))}
+      </ul>
+    </div>
   );
 };
 
