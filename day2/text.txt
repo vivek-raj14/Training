@@ -1,0 +1,13 @@
+- Install Git and configure global username/email 		
+ - Create a GitHub account and new repo 			
+ - Initialize git repo using git init 					
+ - Create .gitignore file with standard entries 			
+ - Stage files using git add . 					
+ - Commit changes using git commit -m "initial" 			
+ - Link to GitHub remote and push to main 				
+ - Install SonarQube locally or try SonarCloud 			
+ - Connect project to Sonar using sonar-scanner 			
+ - Review code quality dashboard from SonarQube		
+
+
+All completed.
