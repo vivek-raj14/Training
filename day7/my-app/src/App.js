@@ -4,8 +4,8 @@ import LevelOne from "./components/propDrilling/LevelOne";
 function App() {
   return (
     <div className="App">
-      {/* <Parent />
-      <LevelOne /> */}
+      <Parent />
+      <LevelOne />
       <Page />
     </div>
   );
