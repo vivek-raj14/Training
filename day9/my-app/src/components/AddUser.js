@@ -26,8 +26,6 @@ const AddUser = () => {
         name: formData.name,
         Address: formData.Address,
       });
-
-      // clear form after success
       setFormData({ name: "", Address: "" });
       alert("User added successfully");
     } catch (error) {
