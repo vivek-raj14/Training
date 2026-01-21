@@ -7,6 +7,7 @@ const List2 = () => {
     <div className="list">
       <h1>Conditional rendering</h1>
       <ul>
+        {/* Conditional rendering */}
         {data.map(({ id, title, description, status }) => (
           <li key={id}>
             {status === "Completed"
