@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./Loader.css";
 const EditUser = ({ user, onUpdate, onCancel }) => {
   const [formData, setFormData] = useState({
     name: user.name,
@@ -17,7 +17,7 @@ const EditUser = ({ user, onUpdate, onCancel }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="edit_user">
       <h3>Edit User</h3>
 
       <input name="name" value={formData.name} onChange={handleChange} />

@@ -46,3 +46,34 @@
   width: 200px;
   border-radius: 15px;
 }
+
+.add_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.add_user input {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  margin: 20px;
+}
+
+.add_user button {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+}
+
+/* Optional UX improvement */
+.add_user button:hover {
+  background: black;
+  color: white;
+}

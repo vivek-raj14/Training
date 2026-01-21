@@ -32,7 +32,7 @@ const AddUser = () => {
   };
 
   return (
-    <div>
+    <div className="add_user">
       <h1>Add User</h1>
 
       <form onSubmit={handleSubmit}>
