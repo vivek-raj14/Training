@@ -9,6 +9,7 @@ const AddUser = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -17,7 +18,10 @@ const AddUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
+      if (formData.name === "" || formData.Address === "")
+        return alert("Enter the Details");
       await createUser({
         name: formData.name,
         Address: formData.Address,

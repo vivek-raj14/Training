@@ -58,10 +58,11 @@
 
 .add_user input {
   border: 2px solid black;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   outline: none;
   margin: 20px;
+  width: 13vw;
 }
 
 .add_user button {
@@ -72,7 +73,6 @@
   background: white;
 }
 
-/* Optional UX improvement */
 .add_user button:hover {
   background: black;
   color: white;
